@@ -1,0 +1,10 @@
+{
+  "keywordFileContentHash": "E73974DBD5B64CF45FAFCEB3C5F9F82D",
+  "keywordClasses": [
+    {
+      "name": "clinicalPackage.ProcedureOrdersteps",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

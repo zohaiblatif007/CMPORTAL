@@ -1,0 +1,258 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16795195800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14539525000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 60,
+        "name": "Test Cancel button feature in Recommended Assessment",
+        "description": "",
+        "id": "add-all-types-of-assessments;test-cancel-button-feature-in-recommended-assessment;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23234621200,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I search 99BPCITest1 using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "99BPCITest1",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1001798000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I verify patient is selected",
+            "match": {
+              "location": "SD_SearchPatient.search_Patientverification()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 7605971200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I click on Assessment tab",
+            "match": {
+              "location": "Assessment.buttoncaregaptab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5456247400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I click on Assessment Add button",
+            "match": {
+              "location": "Assessment.Assementadd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5464166900,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I click on Recommended Assessment tab to add assessment",
+            "match": {
+              "location": "Assessment.recommendedassessment()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4178691300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I should see Cancel, Save \u0026 Close and Save buttons available and functional",
+            "match": {
+              "location": "Assessment.buttonsvalidations()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 5332666800,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I should see the Questionaire is loaded against relevant assessment",
+            "match": {
+              "location": "Assessment.questionaire()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 6916010800,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I should see question removing cross sign available and functional",
+            "match": {
+              "location": "Assessment.Questionremovesign()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2776446900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I enter HTN-1 in assessment title field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "HTN-1",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.Title(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2718433100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I enter 893 in assessment CPTCode field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "893",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.CPTCode(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 2673482900,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I enter chronic desease in assessment comment field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chronic desease",
+                  "offset": 8
+                }
+              ],
+              "location": "Assessment.comment(String)"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 4460372200,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I click on Cancel button to cancel the saved assessment",
+            "match": {
+              "location": "Assessment.Obj_buttoncancel()"
+            },
+            "keyword": "* "
+          },
+          {
+            "result": {
+              "duration": 3120810400,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I should not see the canceled assessment present on the grid",
+            "match": {
+              "location": "Assessment.cancelassessmentverify()"
+            },
+            "keyword": "* "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Assessment"
+          },
+          {
+            "name": "@CancelbuttonofAssessment"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Add All types of Assessments",
+    "description": "",
+    "id": "add-all-types-of-assessments",
+    "keyword": "Feature",
+    "uri": "Include/features/PatientGrid/Assessment/Assessment.feature",
+    "tags": [
+      {
+        "name": "@Assessment",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
